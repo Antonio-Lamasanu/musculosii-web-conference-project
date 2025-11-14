@@ -1,0 +1,70 @@
+----------------------------------------
+
+CORE NODE / NPM
+
+----------------------------------------
+
+Dependencies (Critical: NEVER commit this)
+
+/node_modules
+/package-lock.json
+/npm-debug.log
+
+Build artifacts
+
+/dist
+/build
+
+----------------------------------------
+
+ENVIRONMENT / CONFIG / SECRETS
+
+----------------------------------------
+
+Environment variables (Critical: Contains DB passwords/API keys)
+
+.env
+.env.local
+.env.*.local
+.DS_Store
+
+Logs
+
+.log
+npm-debug.log
+
+----------------------------------------
+
+EDITOR / IDE FOLDERS
+
+----------------------------------------
+
+.vscode/        # VS Code settings
+.idea/          # IntelliJ/WebStorm project files
+
+----------------------------------------
+
+BACKEND SPECIFIC (Server)
+
+----------------------------------------
+
+If using Babel, TypeScript output:
+
+/server/dist/
+/server/tmp/
+
+----------------------------------------
+
+FRONTEND SPECIFIC (React / Vite)
+
+----------------------------------------
+
+Vite/Rollup build folders
+
+/client/dist
+/client/out
+
+React related files
+
+/client/coverage
+/client/web_modules
