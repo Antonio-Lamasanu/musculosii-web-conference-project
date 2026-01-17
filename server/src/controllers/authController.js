@@ -14,6 +14,12 @@ async function login(req, res) {
     if (!name || !role) {
       return res.status(400).json({ error: "name and role are required for first login" });
     }
+
+    const allowed = ["AUTHOR", "REVIEWER", "ORGANIZER"];
+    if (!allowed.includes(role)) {
+      return res.status(400).json({ error: "role must be AUTHOR/REVIEWER/ORGANIZER" });
+    }
+
     user = await User.create({
       name,
       email,
